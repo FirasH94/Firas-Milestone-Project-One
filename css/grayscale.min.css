@@ -293,11 +293,15 @@ footer {
   padding: 5rem 0;
 }
 
+/* Download CV sextion in the about page */
 .text-center {
   text-align: center;
   display: block;
 }
 
-#about hr {
-  color: blue;
+
+
+.about_image img{
+  border-radius: 5px;
+  padding-bottom: 30px;
 }
