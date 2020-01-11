@@ -1,15 +1,13 @@
-
 #mainNav {
   min-height: 56px;
-  background-color: #000;
+  background-color: rgba( 0, 0, 0, 0.5);;
 }
 
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #fff !important;
-  border: 1px solid #fff !important;
-  
+  color: #0099ff !important;
+  border: 1px solid #0099ff;
 }
 
 
@@ -18,7 +16,7 @@
 }
 
 #mainNav .navbar-brand {
-  color: #161616;
+  color: #0099ff;
   font-weight: 700;
   padding: .9rem 0;
 }
@@ -29,7 +27,8 @@
   background-color: transparent;
 }
 
-#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus 
+{
   outline: none;
   background-color: transparent;
 }
@@ -39,32 +38,32 @@
     padding-top: 0;
     padding-bottom: 0;
     border-bottom: none;
-    background-color: transparent;
+    background-color: rgba( 0, 0, 0, 0.5);
     transition: background-color 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(0,153,255);
   }
   #mainNav .nav-link {
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(0,153,255);
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(0,153,255, 0.75);
   }
   #mainNav .nav-link:active {
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    background-color: rgba( 0, 0, 0, 0.5);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #161616;
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #161616;
+    color: #007bff;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
@@ -81,54 +80,54 @@
   }
 }
 
-.masthead {
+.mainPage{
   position: relative;
   width: 100%;
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/MainBackground.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
 
-.masthead h1 {
+.mainPage h1 {
   font-family: 'Varela Round';
   font-size: 2.5rem;
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: -webkit-linear-gradient(rgba(0, 153, 255, 0.9), rgba(0, 153, 255, 3));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
-.masthead h2 {
+.mainPage h2 {
   max-width: 20rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 @media (min-width: 768px) {
-  .masthead h1 {
+  .mainPage h1 {
     font-size: 4rem;
     line-height: 4rem;
   }
 }
 
 @media (min-width: 992px) {
-  .masthead {
+  .mainPage {
     height: 100vh;
     padding: 0;
   }
-  .masthead h1 {
+  .mainPage h1 {
     font-size: 6.5rem;
     line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
-  .masthead h2 {
+  .mainPage h2 {
     max-width: 30rem;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -281,6 +280,10 @@ a:focus, a:hover {
   background-color: #161616 !important;
 }
 
+.bg-grey {
+  background-color: #161616 !important;
+}
+
 .bg-primary {
   background-color: #64a19d !important;
 }
@@ -293,61 +296,15 @@ footer {
   padding: 5rem 0;
 }
 
-
 /* Download CV sextion in the about page */
 .text-center {
   text-align: center;
   display: block;
 }
 
-img #Personal_photo {
+
+
+.about_image img{
   border-radius: 5px;
   padding-bottom: 30px;
-}
-
-/* My Skills section */
-
-
-// Disable animation if transitions are disabled
-@if $enable-transitions {
-  @keyframes progress-bar-stripes {
-    from { background-position: $progress-height 0; }
-    to { background-position: 0 0; }
-  }
-}
-
-.progress {
-  display: flex;
-  height: $progress-height;
-  overflow: hidden; // force rounded corners by cropping it
-  @include font-size($progress-font-size);
-  background-color: $progress-bg;
-  @include border-radius($progress-border-radius);
-  @include box-shadow($progress-box-shadow);
-}
-
-.progress-bar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: $progress-bar-color;
-  text-align: center;
-  white-space: nowrap;
-  background-color: $progress-bar-bg;
-  @include transition($progress-bar-transition);
-}
-
-.progress-bar-striped {
-  @include gradient-striped();
-  background-size: $progress-height $progress-height;
-}
-
-@if $enable-transitions {
-  .progress-bar-animated {
-    animation: progress-bar-stripes $progress-bar-animation-timing;
-
-    @media (prefers-reduced-motion: reduce) {
-      animation: none;
-    }
-  }
 }
