@@ -38,7 +38,19 @@
     .navbar-brand {
       padding: .5rem 0;
       color: fade-out($white, .5);
+      .navbar-light .navbar-nav .nav-link
     }
+    
+    .navbar-light .navbar-nav .nav-link {
+      
+      color: ; rgb(0,123,255)!important;
+    }
+    
+    
+    
+    
+    
+    
     .nav-link {
       transition: none;
       padding: 2rem 1.5rem;

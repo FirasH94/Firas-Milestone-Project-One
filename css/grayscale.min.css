@@ -6,7 +6,7 @@ body {
 
 #mainNav {
   min-height: 56px;
-  background-color: rgba( 0, 0, 0, 0.8);;
+  background-color: rgba( 0, 0, 0, 0.8);
 }
 
 #mainNav .navbar-toggler {
@@ -212,6 +212,10 @@ body {
   }
 }
 
+.skills-section {
+  padding: 5rem 0;
+}
+
 .signup-section {
   padding: 10rem 0;
   background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/contact_image.jpg");
@@ -369,8 +373,58 @@ li {
   .Experience-Content {
 padding-top: 15px;
   }
+  
 }
 
+
+/* Skills section */
+
+.bg-skills {
+  background-image: url("../img/Skills_Wallpaper.png") !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.progress{
+position:relative;
+height: 25px;
+
+}
+
+.progress-section {
+    margin: 40px 20px;
+}
+
+.skills-container {
+  margin: 30px !important;
+}
+
+.btn {
+ background-color: #000; 
+}
+
+.btn-primary {
+  padding: 5px !important;
+  margin: 10px 0px 10px 0px;
+  border: 1px solid #007bff !important;
+}
+
+.btn-primary:focus {
+  background-color: #fff !important;
+  color: #007bff !important;
+}
+
+.btn-primary:hover {
+  background-color: #fff !important;
+  color: #007bff !important;
+}
+
+.card {
+  background-color: #000 !important;
+  color: #fff !important;
+  border: 1px solid #007bff !important;
+  margin-bottom: 10px;
+}
 
 /* Contact form */
 
