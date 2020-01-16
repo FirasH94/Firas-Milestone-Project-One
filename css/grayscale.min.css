@@ -1,6 +1,7 @@
 body {
   top: 0;
   right: 0;
+  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
   
 }
 
@@ -170,7 +171,6 @@ body {
 
 .about-section {
   padding-top: 10rem;
-  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
 .about-section p {
@@ -179,6 +179,7 @@ body {
 
 #about-image {
   padding-bottom: 20px;
+  border-radius: 50%;
 }
 
 .experience-section {
@@ -234,28 +235,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
-}
-
-.contact-section {
-  padding: 5rem 0 0;
-}
-
-.contact-section .card {
-  border: 0;
-  border-bottom: 0.25rem solid #64a19d;
-}
-
-.contact-section .card h4 {
-  font-size: 0.8rem;
-  font-family: 'Varela Round';
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-}
-
-.contact-section .card hr {
-  border-color: #64a19d;
-  border-width: 0.25rem;
-  width: 3rem;
 }
 
 footer .social {
@@ -426,10 +405,18 @@ height: 25px;
   margin-bottom: 10px;
 }
 
+.progress {
+  border: 1px solid #000 !important;
+}
+
 /* Contact form */
 
 #signup form {
   padding: 50px;
   background-color: rgba(22,22,22,0.9) !important;
   margin: 20px;
+}
+
+#signup {
+  
 }
