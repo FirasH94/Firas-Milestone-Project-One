@@ -5,6 +5,10 @@ body {
   
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #007bff !important;
+}
+
 #mainNav {
   min-height: 56px;
   background-color: rgba( 0, 0, 0, 0.8);
@@ -75,15 +79,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #007bff;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: #467370;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #007bff;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #007bff;
   }
 }
 
@@ -193,7 +197,7 @@ body {
 @media (min-width: 992px) {
   .experience-section .featured-text {
     padding: 0 0 0 2rem;
-    border-left: 0.5rem solid #64a19d;
+    border-left: 0.5rem solid #007bff;
   }
 }
 
@@ -207,7 +211,7 @@ body {
     padding: 5rem;
   }
   .experience-section .project-text hr {
-    border-color: #64a19d;
+    border-color: #007bff;
     border-width: .25rem;
     width: 30%;
   }
@@ -307,9 +311,11 @@ footer {
 /* My Experience section*/
 
 .bg-light {
-  background-image: url("../img/Experience_Wallpaper.jpg") !important;
+  background-image: url("../img/Experience_Wallpaper.png") !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
+  margin: 0px;
+  padding: 0px;
 }
 
 .Experience-Title {
@@ -343,6 +349,7 @@ li {
   
 }
 
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   
   .Experience-Title {
@@ -350,10 +357,35 @@ li {
   }
 
   .Experience-Content {
-padding-top: 15px;
+    padding-top: 15px;
   }
   
 }
+
+#Experience div .card{
+  margin-bottom: 20px;
+}
+
+#Experience div .btn{
+  margin-right: 40px !important;
+  margin-bottom: 20px;
+}
+
+#Experience div #Experience1 ul {
+  padding-left: 20px !important;
+  padding-right: 0px !important;
+}
+
+#Experience div #Experience2 ul {
+  padding-left: 20px !important;
+  padding-right: 0px !important;
+}
+
+#Experience div #Experience3 ul {
+  padding-left: 20px !important;
+  padding-right: 0px !important;
+}
+
 
 
 /* Skills section */
