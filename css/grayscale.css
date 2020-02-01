@@ -500,6 +500,55 @@ li {
   padding-right: 0px !important;
 }
 
+#Experience-P2 div .card{
+  margin-bottom: 20px;
+}
+
+#Experience-P2 div .btn{
+  margin-right: 40px !important;
+  margin-bottom: 20px !important;
+  margin-left: 30px !important;
+}
+
+#Experience-P2 div #Experience1 ul {
+  padding-left: 20px !important;
+  padding-right: 0px !important;
+}
+
+#Experience-P2 div #Experience2 ul {
+  padding-left: 20px !important;
+  padding-right: 0px !important;
+}
+
+#Experience-P2 div #Experience3 ul {
+  padding-left: 20px !important;
+  padding-right: 0px !important;
+}
+
+#Experience-P3 div .card{
+  margin-bottom: 20px;
+}
+
+#Experience-P3 div .btn{
+  margin-right: 40px !important;
+  margin-bottom: 20px !important;
+  margin-left: 30px !important;
+}
+
+#Experience-P3 div #Experience1 ul {
+  padding-left: 20px !important;
+  padding-right: 0px !important;
+}
+
+#Experience-P3 div #Experience2 ul {
+  padding-left: 20px !important;
+  padding-right: 0px !important;
+}
+
+#Experience-P3 div #Experience3 ul {
+  padding-left: 20px !important;
+  padding-right: 0px !important;
+}
 
 
 /* Skills section */
