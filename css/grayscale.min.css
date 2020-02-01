@@ -31,14 +31,8 @@ body {
     border:8px solid transparent;
     border-bottom-color:#ffffff;
 }
-#scroll:hover {
-    background-color:#007bff;
-    opacity:1;filter:"alpha(opacity=100)";
-    border: 1px solid #000 !important;
-    box-shadow: 0 0 20px rgba(0,123,255,.9);
-    -ms-filter:"alpha(opacity=100)";
-    
-}
+
+
 
 /* Navigation bar styling */
 
@@ -72,11 +66,7 @@ body {
   padding: .9rem 0;
 }
 
-#mainNav .navbar-nav .nav-item:hover {
-  color: fade(white, 80%);
-  outline: none;
-  background-color: transparent;
-}
+
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus 
 {
